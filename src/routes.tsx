@@ -6,8 +6,11 @@ import { RatePage } from "./pages/RatePage";
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<RatePage />} />
-      <Route path="/greetings" element={<GreetingsPage />} />
+      <Route path="/interactive-rating-component" element={<RatePage />} />
+      <Route
+        path="/interactive-rating-component/greetings"
+        element={<GreetingsPage />}
+      />
     </Routes>
   );
 }

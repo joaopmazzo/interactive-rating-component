@@ -38,7 +38,14 @@ export function RatePage() {
           <RateButton value="4" textContent="4" />
           <RateButton value="5" textContent="5" />
         </ToggleGroup.Root>
-        <Link to={rate ? "/greetings" : "/"} state={{ rate }}>
+        <Link
+          to={
+            rate
+              ? "/interactive-rating-component/greetings"
+              : "/interactive-rating-component"
+          }
+          state={{ rate }}
+        >
           <div
             className="bg-[#fc7613] w-full p-2 mt-6 rounded-3xl
             flex justify-center items-center
